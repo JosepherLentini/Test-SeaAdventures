@@ -7,38 +7,8 @@ $h5: 14px;
 
 $p: 18px;
 
-@mixin display(){
-    font-size: $display;
-    font-weight: bold;
-}
-
-
-@mixin h1(){
-    font-size: $h1;
-    font-weight: bold;
-}
-
-@mixin h2(){
-    font-size: $h2;
-    font-weight: 500;
-}
-
-@mixin h3(){
-    font-size: $h3;
-    font-weight: 500;
-}
-
-@mixin h4(){
-    font-size: $h4;
-    font-weight: 300;
-}
-
-@mixin h5(){
-    font-size: $h5;
-    font-weight: 300;
-}
-
-@mixin p(){
-    font-size: $p;
-    font-weight: 300;
+@mixin font($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
 }
