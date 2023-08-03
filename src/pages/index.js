@@ -1,16 +1,16 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
 
 //IMPORT COMPONENTS
-import Cards from '@/components/Cards'
-import Hero from '@/components/Hero'
+import Cards from "@/components/Cards";
+import Hero from "@/components/Hero";
 
 //IMPORT LAYOUT
-import Header from '@/layouts/DefaultLayout'
+import Header from "@/layouts/DefaultLayout";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -25,5 +25,5 @@ export default function Home() {
       <Hero />
       <Cards />
     </>
-  )
+  );
 }

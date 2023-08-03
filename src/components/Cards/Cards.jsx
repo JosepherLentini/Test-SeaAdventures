@@ -1,16 +1,38 @@
-import { data } from "@/utils/data"
-import Card from "../Card/Card"
+import { data } from "@/utils/data";
+import Card from "../Card/Card";
+import { useState } from "react";
 
-import styles from "./Cards.module.scss"
+import styles from "./Cards.module.scss";
 
 const Cards = () => {
-    return (
-        <div className={styles.Cards}>
-            {
-                data.map((mock)=> <Card mock={mock}/>)
-            }
-        </div>
-    )
-}
+  const [show, setShow] = useState(8);
+  const [btn, setBtn] = useState(true);
 
-export default Cards
+  console.log(data.length);
+
+  const onHandleClick = () => {
+    setShow(show + 8);
+    if (data.length - show < 8) {
+      setShow(data.length);
+    }
+    if (show === data.length) {
+      setBtn(false);
+    }
+  };
+  return (
+    <div className={styles.Cards}>
+      <div className={styles.cardsWrapper}>
+        {data.slice(0, show).map((mock) => (
+          <Card mock={mock} />
+        ))}
+      </div>
+      {btn && (
+        <div className={styles.show}>
+          <button onClick={onHandleClick}>mostra altri</button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Cards;
