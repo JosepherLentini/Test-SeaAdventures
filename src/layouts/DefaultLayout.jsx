@@ -5,11 +5,7 @@ const Header = ({children}) => {
     return (
       <>
         <div className={styles.Header}>
-          
             <Logo className={styles.logo}/>
-
-           
-          
         </div>
         {children}
       </>
