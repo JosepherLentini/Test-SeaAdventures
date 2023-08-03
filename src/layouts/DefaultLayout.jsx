@@ -7,6 +7,8 @@ const Header = ({children}) => {
         <div className={styles.Header}>
           
             <Logo className={styles.logo}/>
+
+           
           
         </div>
         {children}
