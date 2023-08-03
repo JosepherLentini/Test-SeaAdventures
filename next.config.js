@@ -4,6 +4,7 @@ const nextConfig = {
   sassOptions: {
     additionalData: `
       @import "./src/styles/helpers/mixins.scss";
+      @import "./src/styles/helpers/devices.scss";
       @import "./src/styles/tipography/headings.scss";
       @import "./src/styles/layout/colors.scss";
         `,

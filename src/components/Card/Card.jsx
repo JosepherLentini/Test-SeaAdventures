@@ -32,14 +32,14 @@ const Card = ({mock}) => {
         <div className={styles.start}>
           {mock.departureDate.split(" ").map((el) => (
             <>
-              <p>{el}</p>
+              <p key={Math.floor((Math.random() * 1000))}>{el}</p>
             </>
           ))}
         </div>
         <div className={styles.end}>
           {mock.arrivalDate.split(" ").map((el) => (
             <>
-              <p>{el}</p>
+              <p key={Math.floor((Math.random() * 1000))}>{el}</p>
             </>
           ))}
         </div>
