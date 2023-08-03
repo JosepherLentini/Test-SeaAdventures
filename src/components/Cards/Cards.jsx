@@ -23,7 +23,7 @@ const Cards = () => {
     <div className={styles.Cards}>
       <div className={styles.cardsWrapper}>
         {data.slice(0, show).map((mock) => (
-          <Card mock={mock} />
+          <Card mock={mock}  key={mock.id}/>
         ))}
       </div>
       {btn && (

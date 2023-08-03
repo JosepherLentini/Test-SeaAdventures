@@ -6,6 +6,8 @@ import styles from "@/styles/Home.module.css";
 //IMPORT COMPONENTS
 import Cards from "@/components/Cards";
 import Hero from "@/components/Hero";
+import Casual from "@/components/Casual";
+import Banner from "@/components/Banner";
 
 //IMPORT LAYOUT
 import Header from "@/layouts/DefaultLayout";
@@ -24,6 +26,8 @@ export default function Home() {
       <Header />
       <Hero />
       <Cards />
+      <Banner />
+      <Casual />
     </>
   );
 }
