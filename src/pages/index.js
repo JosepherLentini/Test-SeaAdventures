@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+import Cards from '@/components/Cards'
+
 //IMPORT LAYOUT
 import Header from '@/layouts/DefaultLayout'
 
@@ -18,6 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Cards />
     </>
   )
 }
