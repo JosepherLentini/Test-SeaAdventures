@@ -1,5 +1,5 @@
 import styles from "./Card.module.scss";
-
+import RightArrow from "@/assets/icons/right-arrow-alt";
 
 
 function capitalizeFirstLetter(string) {
@@ -32,17 +32,18 @@ const Card = ({mock}) => {
         <div className={styles.start}>
           {mock.departureDate.split(" ").map((el) => (
             <>
-              <p key={Math.floor((Math.random() * 1000))}>{el}</p>
+              <p key={Math.floor(Math.random() * 1000)}>{el}</p>
             </>
           ))}
         </div>
         <div className={styles.end}>
           {mock.arrivalDate.split(" ").map((el) => (
             <>
-              <p key={Math.floor((Math.random() * 1000))}>{el}</p>
+              <p key={Math.floor(Math.random() * 1000)}>{el}</p>
             </>
           ))}
         </div>
+       <RightArrow className={styles.arrow}/> 
       </div>
       <div className={styles.disponibility}>
         <p>
