@@ -33,4 +33,27 @@
       }
     }
   }
+
+  @include xs() {
+    .imageWrapper {
+      
+      height: 80vh;
+
+    }
+
+    .overlay {
+     
+     display: flex;
+     flex-direction: column;
+
+
+      h1 {
+        color: $color-white;
+        p {
+          text-align: center;
+        }
+        @include flexColumn(0);
+      }
+    }
+  }
 }
