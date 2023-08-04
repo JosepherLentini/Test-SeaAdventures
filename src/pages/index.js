@@ -8,6 +8,7 @@ import Cards from "@/components/Cards";
 import Hero from "@/components/Hero";
 import Casual from "@/components/Casual";
 import Banner from "@/components/Banner";
+import Groups from "@/components/Groups";
 
 //IMPORT LAYOUT
 import Header from "@/layouts/DefaultLayout";
@@ -25,7 +26,7 @@ export default function Home() {
       </Head>
       <Header />
       <Hero />
-      <Cards />
+      <Groups />
       <Banner />
       <Casual />
     </>

@@ -1,7 +1,11 @@
-import { data } from "@/utils/data";
-import Card from "../Card/Card";
+//HOOKS
 import { useState } from "react";
-
+// MOCK
+import { data } from "@/utils/data";
+// COMPONENTS
+import Card from "../Card/Card";
+import Select from "../Select";
+// STYLE
 import styles from "./Cards.module.scss";
 
 const Cards = () => {
@@ -19,8 +23,11 @@ const Cards = () => {
       setBtn(false);
     }
   };
+
+  
   return (
     <div className={styles.Cards}>
+        
       <div className={styles.cardsWrapper}>
         {data.slice(0, show).map((mock) => (
           <Card mock={mock}  key={mock.id}/>

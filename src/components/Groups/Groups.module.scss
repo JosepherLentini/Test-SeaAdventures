@@ -1,0 +1,56 @@
+.Groups {
+  width: 100%;
+  padding: 90px;
+
+  .groupHeader {
+    width: 100%;
+    display: flex;
+    // background-color: $color-primary;
+    padding: 10px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 25px;
+
+    .groupTitle {
+      @include font($h3, 500, $color-primary);
+    }
+  }
+
+  .departureWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .show {
+    width: 100%;
+    padding-top: 50px;
+    @include flexCenter(0);
+    button {
+      width: 200px;
+      height: 30px;
+      text-transform: uppercase;
+      @include font($h5, 500, white);
+      @include flexCenter(0);
+      background-color: $color-primary;
+      border: none;
+      border-radius: 4px;
+      &:hover {
+        transform: scale(1.08);
+        background-color: $color-primary-hover;
+      }
+    }
+  }
+
+  @include xs() {
+    width: 100%;
+    padding: 30px;
+
+     .groupHeader {
+      justify-content: center;
+     }
+  }
+}
